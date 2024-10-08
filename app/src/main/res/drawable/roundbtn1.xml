@@ -1,0 +1,6 @@
+<!-- res/drawable/roundbtn.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <corners android:radius="10dp" /> <!-- Adjust the radius for roundness -->
+    <solid android:color="#008000" /> <!-- Replace with your desired color -->
+</shape>

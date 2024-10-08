@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MAD</string>
+    <!-- Other string resources -->
+    <string name="my_image_description">A beautiful view of Angkor Wat</string>
+</resources>

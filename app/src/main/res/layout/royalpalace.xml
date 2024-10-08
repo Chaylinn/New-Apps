@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+
+        android:id="@+id/myImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/my_image_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/royalpalace"
+        app:layout_constraintDimensionRatio="1:0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent" />
+
+    <LinearLayout
+        android:id="@+id/myLinearLayout"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myImageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/roundbtn1"
+            android:text="About"
+            android:textSize="10sp" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/roundbtn1"
+            android:text="Photos"
+            android:textSize="10sp" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/roundbtn1"
+            android:textColor="@color/black"
+            android:backgroundTint="#FFFFFF"
+            android:text="Reviews"
+            android:textSize="9sp" />
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/myLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#808080"
+        app:layout_constraintTop_toBottomOf="@id/myLinearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/myLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="center">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/my_image_view_1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/download"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sok Sao"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice Place"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:30pm"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="322dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_1"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:numStars="5"
+        android:rating="3"
+        android:scaleX="0.35"
+        android:scaleY="0.35"
+        android:stepSize="1.0"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_2"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:numStars="5"
+        android:rating="3"
+        android:scaleX="0.35"
+        android:scaleY="0.35"
+        android:stepSize="1.0"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:30pm"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="322dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <ImageView
+        android:id="@+id/my_image_view_2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/download"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="419dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice Place"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sok Sao"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="419dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_3"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:numStars="5"
+        android:rating="3"
+        android:scaleX="0.35"
+        android:scaleY="0.35"
+        android:stepSize="1.0"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:30pm"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="322dp"
+        tools:layout_editor_absoluteY="532dp" />
+
+    <ImageView
+        android:id="@+id/my_image_view_3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/download"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice Place"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sok Sao"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <TextView
+        android:id="@+id/my_text_view_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Review"
+        android:textColor="#0000FF"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="596dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
